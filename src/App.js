@@ -1,6 +1,7 @@
 import fruits from "./mockData/fruits.json";
 import FruitsIndex from "./components/FruitsIndex";
 import FruitForm from "./components/FruitForm";
+import FavoriteFruit from "./components/FavoriteFruit";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         pass in array of fruits from mockdata as a prop called fruits */}
       <FruitsIndex fruits={fruits}/>
       <FruitForm fruits={fruits}/>
+      <FavoriteFruit fruits={fruits}/>
     </>
   );
 }

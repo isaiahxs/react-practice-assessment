@@ -1,6 +1,9 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useContext } from 'react';
 
 export const FavFruitContext = createContext();
+//custom hook
+const useFavFruit = () => useContext(FavFruitContext);
+  //whenever we use useFavFruit, we will receive the object containing favFruitId and setFavFruitId
 
 export default function FavFruitProvider(props) {
   const [favFruitId, setFavFruitId] = useState('1');

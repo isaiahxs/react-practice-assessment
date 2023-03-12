@@ -36,7 +36,7 @@ function App() {
           </Route>
 
           <Route path='/fruits/:fruitId'>
-            <FruitShow />
+            <FruitShow fruits={fruits}/>
           </Route>
 
           {/* this will catch everything else */}

@@ -4,12 +4,16 @@ import FruitForm from "./components/FruitForm";
 import FavoriteFruit from "./components/FavoriteFruit";
 import SetFavoriteFruit from "./components/SetFavoriteFruit";
 import FruitShow from './components/FruitShow';
-import { Switch, Route } from "react-router-dom";
+import Navigation from './components/Navigation';
+import { Switch, Route, NavLink } from "react-router-dom";
 
 function App() {
   return (
     <>
       <h1>Welcome to Fruits App</h1>
+
+      <Navigation />
+
       {/* render FruitsIndex inside of App
         pass in array of fruits from mockdata as a prop called fruits */}
         {/* need to use Switch for the "page not found" */}
